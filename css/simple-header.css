@@ -2,3 +2,7 @@
     background: url(../images/header_bg.jpg) no-repeat;
     height: 192px;
 }   
+
+@media(max-width: 600px) {
+background: none;
+}

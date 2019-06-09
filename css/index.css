@@ -119,7 +119,7 @@
 }
 
 .benefits-text span {
-    font-size: 13px;
+    font-size: 9px;
 }
 
 .benefits-num {
@@ -223,7 +223,7 @@
 }
 
 .contact-box span {
-    width: 70%;
+    width: 85%;
     display: block;
     line-height: 1.3;
 }
