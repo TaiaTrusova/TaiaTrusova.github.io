@@ -119,7 +119,7 @@
 }
 
 .benefits-text span {
-    font-size: 9px;
+    font-size: 15px;
 }
 
 .benefits-num {
@@ -230,7 +230,7 @@
 
 .contact-line {
     width: 60%;
-    margin-bottom: 36px;
+    margin-bottom: 20px;
 }
 
 @media(max-width: 1320px) {
@@ -330,4 +330,12 @@
     .feedback {
         padding-right: 2.5%;
     }
+    body .benefits-text span {
+
+        font-size: 9px;
+    }
+    .contact {
+
+      padding:0; 
+}
 }

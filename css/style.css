@@ -2,10 +2,20 @@
 
 
 @font-face {
-    font-family: 'OpenSans';
-    src: url('fonts/OpenSans-Regular.ttf')
-}
+    font-family: 'Helvetica Neue';
+    src: url('fonts/helveticaneuecyr-thin-webfont.eot');
+    src: url('fonts/helveticaneuecyr-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/helveticaneuecyr-thin-webfont.woff2') format('woff2'),
+         url('fonts/helveticaneuecyr-thin-webfont.woff') format('woff'),
+         url('fonts/helveticaneuecyr-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 
+}
+body{
+    font-family: 'Helvetica Neue',Tahoma;
+	
+}
 .noanimated {
     -webkit-animation-duration: none;
     animation-duration: none;
@@ -89,18 +99,24 @@ h4 {
     padding-bottom: 10px;
     position: relative;
 }
-
+iframe{
+    padding: 30px;
+    display: block;
+    margin: 0 auto;
+}
 .main-menu-box {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 70%;
+    width: 65%;
     margin: auto;
 }
 
 .menu_item_link {
+    letter-spacing: 0.1em;
     font-weight: bold;
     transition: 0.1s;
+    padding: 10px;
 }
 
 .menu_item_link:hover {
@@ -129,6 +145,7 @@ h4 {
 }
 
 .footer span {
+    font-size: 17px;
     color: #fff;
     display: block;
     margin-top: 20px;
@@ -143,10 +160,10 @@ h4 {
 }
 
 #mobile-menu a {
+    font-size: 12px;
     text-decoration: none;
     color: #fff;
     opacity: 1;
-    font-size: 1.0em;
     font-weight: 400;
     transition: 200ms;
 }
@@ -254,7 +271,6 @@ h4 {
 .logo-mobile img {
     height: 55px;
 }
-
 .stud-header {
     letter-spacing: 0.2em;
     text-align: center;
@@ -274,38 +290,33 @@ h4 {
     padding-bottom: 15px;
     display: block;
 }
-
 .stud-attention button {
     background: lightgrey;
     border-radius: 30px;
     padding: 7px;
 }
 
-.stud-attention p {
-    font-style: italic
-}
-
-.contact-info {
+.stud-attention p{
+font-style: italic
+ }
+ .contact-info{
     margin: 0 auto;
     width: 50%;
-}
-
-.contact-info {
-    letter-spacing: 0.1em;
-    text-align: center
-}
-
-.cont {
+ }
+ .contact-info{
+     letter-spacing: 0.1em;
+     text-align: center
+ }
+ .cont{
     font-size: 32px;
     letter-spacing: 0.2em;
-}
-
+ }
 .stud-banner {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.stud-banner img {
+.stud-banner img{
     width: 50%;
     border-radius: 10px;
 }
@@ -330,9 +341,23 @@ h4 {
     left: -30px;
 }
 
-.media-wrap {
-    width: 52%;
-    margin: auto;
+@media(max-width: 321px) {
+    .stud-attention {
+        font-size: 12px;
+    }
+
+    .list {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    
+    .stud-header {
+        margin: 10px 0;
+    }
+    
+    .stud-banner img {
+        width: 80%;
+    }
 }
 
 @media(max-width: 1320px) {
@@ -347,7 +372,7 @@ h4 {
     .main-menu-box {
         width: 80%;
     }
-
+    
 
 }
 
@@ -374,13 +399,11 @@ h4 {
     body h1 {
         font-size: 1.7em;
     }
-
     body h2 {
         font-size: 1.6em;
     }
-
     body h3 {
-        font-size: 12px;
+        font-size: 15px;
     }
 }
 
@@ -392,13 +415,11 @@ h4 {
     body h1 {
         font-size: 1.5em;
     }
-
     body h2 {
         font-size: 1.4em;
     }
-
     body h3 {
-        font-size: 12px;
+        font-size: 10px;
         margin-bottom: 5px;
     }
 }
@@ -411,11 +432,10 @@ h4 {
     body h1 {
         font-size: 1.4em;
     }
-
     body h2 {
         font-size: 1.3em;
     }
-
+   
     .wow {
         visibility: visible !important;
         -webkit-animation: none !important;
@@ -440,13 +460,30 @@ h4 {
     body h1 {
         font-size: 1.2em;
     }
-
     body h2 {
-        font-size: 1.1em;
+        font-size: 0.7em;
     }
-
     .footer span {
+        font-size: 13px;
         width: 90%;
         text-align: center;
     }
+    .header {
+        height: 60px;
+        background: none
+    }
+}
+
+@media(max-width: 320px){
+  
+#mobile-menu a {
+    font-size: 10px;
+}
+
+.footer span {
+    font-size: 8px;
+}
+body h2{
+    font-size: 0.5em;
+}
 }
